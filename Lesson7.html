@@ -25,21 +25,30 @@ Some cases:
      function multipleElementToIndex(arr) {
       return arr.filter((item, i)=> !i? 0: !(item % i));
      }
+
+ // console.log(multipleElementToIndex([22, -6, 32, 82, 9, 25]));
+		
     /* 2. Simple, remove the spaces from the string, then return the resultant string.
     */
      function removeSpacesFromString(str) {
       return str.replace(/\s/g, '');
      }
+		
+//console.log(multipleElementToIndex([22, -6, 32, 82, 9, 25]));
+		
     /* 3. Remove First and Last Character It's pretty straightforward. 
 Your goal is to create a function that removes the first 
 and last characters of a string. You're given one parameter, 
 the original string. 
 You don't have to worry with strings with less than two characters.
     */
-    function enaugh(cap, on, wait) {
-      return cap - on - wait >= 0 ? 0 : cap - on;
-    }
-    
+ function removeFirstLastFromString(str) {
+  return str.slice(1, -1);
+}
+
+//console.log(removeFirstLastFromString('bambaleeeillllo'));
+
+		
 	</script>
 </body>
 
