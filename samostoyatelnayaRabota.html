@@ -13,17 +13,17 @@
  количество раз в виде multipleSum(1)(2)(3)(4)(5)() // 15 
  */
  
- function sum(a) {
-var currentSum = a;
-f.toString = function() {
-return currentSum;
-};
-function f(b) {
-currentSum += b;
-return f;
-}
-return f;
-}
+	function sum(a) {
+		var currentSum = a;
+			f.toString = function() {
+				return currentSum;
+			};
+		function f(b) {
+			currentSum += b;
+				return f;
+		}
+		return f;
+	}
  
 /*
 2.(10 баллов ) Написать ф-цию проверки на монотонность 
@@ -37,11 +37,11 @@ return f;
 [1, 2, 1] - false
 */
 
-var isMonotone = function(arr){
-return arr.reduce(function(previousValue, currentValue) {
-return previousValue <= currentValue;
-});
-}
+	var isMonotone = function(arr){
+		return arr.reduce(function(previousValue, currentValue) {
+			return previousValue <= currentValue;
+		});
+	}
 
 /*   
 3.(20 баллов) написать ф-цию, которая отсортирует массив в порядке 
