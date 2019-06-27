@@ -8,9 +8,46 @@
 
 <body>
 	<script>
-   /*   */
-      /*   */
-         /*   */
+/*
+1.(10 баллов) Написать ф-цию, которая будет может вызываться неограниченное
+ количество раз в виде multipleSum(1)(2)(3)(4)(5)() // 15 
+ */
+ 
+ function sum(a) {
+var currentSum = a;
+f.toString = function() {
+return currentSum;
+};
+function f(b) {
+currentSum += b;
+return f;
+}
+return f;
+}
+ 
+ 
+ 
+/*
+2.(10 баллов ) Написать ф-цию проверки на монотонность 
+[1, 2, 3] - true
+[1, 1, 2] - true
+[1, 1, 1] - true
+[3, 2, 1] - true
+[2, 2, 1] - true
+[1, 1, 1, 2] - true
+[1, 2, 1, 2] - false
+[1, 2, 1] - false
+*/
+
+var isMonotone = function(arr){
+return arr.reduce(function(previousValue, currentValue) {
+return previousValue <= currentValue;
+});
+}
+
+/*   
+
+*/
 
 
 
