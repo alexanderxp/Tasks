@@ -10,19 +10,56 @@
 	<script>
 /*
 1.
+10 баллов
+Реализуйте функцию removeProperty, которая принимает объек и имя свойства и выполняет следующие действия:
+Если объект obj имеет свойство prop, функция удаляет свойство из объекта и возвращает true; во всех остальных случаях возвращается false.
+function removeProperty(obj, prop) {
+ return null;
+}
  */
  
 
  
 /*
 2.
+10 баллов
+Напишите функцию, которая преобразует введенную пользователем дату в формате MM/DD/YYYY в формат, необходимый для API (YYYYMMDD). Параметр «userDate» и возвращаемое значение являются строками.
+Например, следует преобразовать введенную пользователем дату «31.12.2014» в «20141231», подходящую для API.
+function formatDate(userDate) {
+ // format from M/D/YYYY to YYYYMMDD
+}
+console.log(formatDate("12/31/2014"));
 */
 
 
 
 /*   
 3.
-    ];
+ 15 баллов
+класс Worker будет работать так:
+let worker = new Worker('Имя', 'Фамилия', 10, 31);
+console.log(worker.getRate()); //выведет 10
+console.log(worker.getDays()); //выведет 31
+console.log(worker.getSalary()); //выведет 310 - то есть 10*31
+worker.setRate(20); //увеличим ставку
+worker.setDays(10); //уменьшим дни
+console.log(worker.getSalary()); //выведет 200 - то есть 20*10
+класс PreciousWorker наследует у Worker будет работать так:
+let preciousWorker = new PreciousWorker('Имя', 'Фамилия', 10, 31, 5);
+console.log(worker.getRate()); //выведет 10
+console.log(worker.getDays()); //выведет 31
+console.log(worker.getSalary()); //выведет 1550 - то есть 10*31*5
+worker.setRate(20); //увеличим ставку
+worker.setDays(10); //уменьшим дни
+console.log(worker.getSalary()); //выведет 1000 - то есть 20*10*5
+ДОП
+isBalanced('}{')                      // false
+isBalanced('{{}')                     // false
+isBalanced('{}{}')                    // true
+isBalanced('foo { bar { baz } boo }') // true
+isBalanced('foo { bar { baz }')       // false
+isBalanced('foo { bar } }')           // false
+https://www.codewars.com/kata/calculating-with-functions/javascript
 */
 
 
