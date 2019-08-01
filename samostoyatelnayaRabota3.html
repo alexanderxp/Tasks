@@ -43,10 +43,21 @@ firstNonRepeatingLetter('Go hang a salami, I\'m a lasagna hog!') === ','
 
 */
 
+  'use strict'
 
+function sum(x) {
 
+  let currSumma = x;
 
-
+  	function f(y) {
+   	 currSumma += y;
+   	 return f;
+ 	 }
+  	f.toString = function() {
+  	  return currSumma;
+ 	 };
+  return f;
+}
 
 
 /*   
