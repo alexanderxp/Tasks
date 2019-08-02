@@ -43,7 +43,15 @@ firstNonRepeatingLetter('Go hang a salami, I\'m a lasagna hog!') === ','
 
 */
 
+var str = "pradeepdavuluri";
 
+for ( var i = 0; i < str.length; i++ ){
+
+	if ( str.indexOf(str.charAt(i)) == str.last.indexOf(str.charAt(i))){
+		concole.log(str.charAt(i));
+		break;
+	}
+}
 
 /*   
 3.
@@ -91,11 +99,6 @@ return parseInt(rezult)
 }
 
 
-
-
-
-
-
 /*    
 5.1
 https://www.codewars.com/kata/find-the-parity-outlier/javascript
@@ -113,7 +116,16 @@ Should return: 160 (the only even number)
 
 */
 
+function oddEvenSelect(arr){
+	const odd = [], even = [];
+	arr.forEach(item => {
+		item % 2 === 0 ? odd.push(item) : even.push(item);
+	});
+	return even.length === 1 ? even[0] : odd.length === 1 ? odd[0] : 'incorrect array';
+};
 
+//console.log(oddEvenSelect([ 2,4,0,100,4,11,2602,36]));         // 11
+//console.log(oddEvenSelect([160, 3, 1719, 19, 11, 13, -21]));   //160
 
 
 
